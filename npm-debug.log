@@ -1,0 +1,55 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/paulchap/.nvm/v0.8.28/bin/node',
+1 verbose cli   '/home/paulchap/.nvm/v0.8.28/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'express' ]
+2 info using npm@1.2.30
+3 info using node@v0.8.28
+4 verbose read json /home/paulchap/NodeJS-API/api-app/package.json
+5 warn package.json api-app@1.0.0 No readme data.
+6 verbose from cache /home/paulchap/NodeJS-API/api-app/package.json
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'express', null ]
+9 verbose cache add name=undefined spec="express" args=["express",null]
+10 verbose parsed url { pathname: 'express', path: 'express', href: 'express' }
+11 silly lockFile f3c62de4-express express
+12 verbose lock express /home/paulchap/.npm/f3c62de4-express.lock
+13 silly lockFile f3c62de4-express express
+14 silly lockFile f3c62de4-express express
+15 verbose addNamed [ 'express', '' ]
+16 verbose addNamed [ null, '' ]
+17 silly lockFile 64a534c1-express express@
+18 verbose lock express@ /home/paulchap/.npm/64a534c1-express.lock
+19 silly addNameRange { name: 'express', range: '', hasData: false }
+20 verbose url raw express
+21 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+22 verbose url resolved https://registry.npmjs.org/express
+23 info trying registry request attempt 1 at 14:58:43
+24 http GET https://registry.npmjs.org/express
+25 info retry will retry, error on last attempt: Error: 139806190950208:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+26 info trying registry request attempt 2 at 14:58:53
+27 http GET https://registry.npmjs.org/express
+28 info retry will retry, error on last attempt: Error: 139806190950208:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+29 info trying registry request attempt 3 at 14:59:53
+30 http GET https://registry.npmjs.org/express
+31 silly lockFile 64a534c1-express express@
+32 silly lockFile 64a534c1-express express@
+33 error Error: 139806190950208:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+33 error
+33 error     at CleartextStream._puller (tls.js:670:24)
+33 error     at CleartextStream.CryptoStream._pull (tls.js:604:19)
+33 error     at SecurePair.cycle (tls.js:894:20)
+33 error     at EncryptedStream.CryptoStream.write (tls.js:285:13)
+33 error     at Socket.ondata (stream.js:38:26)
+33 error     at Socket.EventEmitter.emit (events.js:96:17)
+33 error     at TCP.onread (net.js:397:14)
+34 error If you need help, you may report this log at:
+34 error     <http://github.com/isaacs/npm/issues>
+34 error or email it to:
+34 error     <npm-@googlegroups.com>
+35 error System Linux 5.10.16.3-microsoft-standard-WSL2
+36 error command "/home/paulchap/.nvm/v0.8.28/bin/node" "/home/paulchap/.nvm/v0.8.28/bin/npm" "install" "express"
+37 error cwd /home/paulchap/NodeJS-API/api-app
+38 error node -v v0.8.28
+39 error npm -v 1.2.30
+40 verbose exit [ 1, true ]
